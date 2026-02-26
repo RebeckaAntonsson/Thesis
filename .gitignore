@@ -1,0 +1,9 @@
+# Data files to ignore
+
+# There are ignored because there is A LOT of tool_output files with this extension
+.csv
+.xlsx
+
+# But keep the final result files
+!Immonogenecity_tool_testing/Testing_settings_for_tools/all_tools_all_settings_combined_table.csv
+!Immonogenecity_tool_testing/Best_tools/best_tools_table.csv
