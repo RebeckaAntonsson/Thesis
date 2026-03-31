@@ -3,6 +3,7 @@
 # There are ignored because there is A LOT of tool_output files with this extension
 *.csv
 *.xlsx
+*.fasta
 
 # But keep the final result files
 !Immonogenecity_tool_testing/Testing_settings_for_tools/all_tools_all_settings_combined_table.csv
