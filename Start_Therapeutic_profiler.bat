@@ -1,2 +1,0 @@
-streamlit run therapeutic_profiler_app.py
-pause
