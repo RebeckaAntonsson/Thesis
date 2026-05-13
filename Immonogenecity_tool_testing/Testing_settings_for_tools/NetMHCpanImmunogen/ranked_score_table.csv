@@ -1,9 +1,0 @@
-dataframe,sum_MARE,spearmanr,spearmanr_pval,Caplacizumab_MARE,Vobarilizumab_MARE
-netMHCpan_immunogen_peptide_length_8_AB,429.0,0.08665757824481303,0.6100608501727216,10.0,-22.0
-netMHCpan_immunogen_peptide_length_9_AB,402.0,0.1517396718924223,0.3699730931714885,11.0,-20.0
-netMHCpan_immunogen_peptide_length_10_AB,401.0,0.1986841328841404,0.23845171280362276,10.0,-17.0
-netMHCpan_immunogen_peptide_length_11_AB,390.0,0.1951277343241618,0.24713173844112576,11.0,-21.0
-netMHCpan_immunogen_peptide_length_12_AB,399.0,0.18149487317757695,0.28234862449923337,11.0,-18.0
-netMHCpan_immunogen_peptide_length_13_AB,358.0,0.3210052157420578,0.052721591779700115,11.0,-23.0
-netMHCpan_immunogen_peptide_length_14_AB,358.0,0.329302987197724,0.04656659492992822,11.0,-28.0
-netMHCpan_immunogen_all_pep_lengths_AB,388.0,0.24229492650545276,0.14849496538478837,11.0,-22.0

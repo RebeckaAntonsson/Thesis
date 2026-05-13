@@ -134,6 +134,7 @@ def scores_table(combined_df):
 
     with st.expander("Show detailed results table"):
         st.dataframe(styled_df, use_container_width=True)
+    # add so that you can download the table
 
 
 
@@ -190,12 +191,18 @@ def result_VHH(biophi_output_df):
     # Show in expandable section
     with st.expander("Show OASis Identity table"):
         st.dataframe(styled_df, use_container_width=True)
+# add so that you can download the table                                                 
+
+
+
+
+
+
 
 # Main script
 
 def main():
     # Start program and print the first information, using streamlit
-
     st.header("Therapeutic Profiler")
      
     # Ask user to input if they want to predict VHH or minibinders
@@ -209,7 +216,6 @@ def main():
     col1, col2 = st.columns(2)
 
     # initialize protein type
-
     with col1:
         if st.button("VHH"):
             st.session_state.protein_type = "VHH"
@@ -218,6 +224,8 @@ def main():
         if st.button("Minibinder"):
             st.session_state.protein_type = "Minibinder"
 
+
+    # VHH's
     if st.session_state.protein_type == "VHH":
         st.write("Make predictions for your VHH's with BioPhi here: https://biophi.dichlab.org/humanization/humanness/")
         st.write("Select OASis prevalence threshold: strict (≥90% subjects)")
@@ -230,7 +238,8 @@ def main():
                 st.warning("Please upload both files before continuing.")
             else:
                 st.success("Files uploaded. Running analysis...")
-
+        
+        
             st.session_state["scores_df"] = biophi
 
     if "scores_df" in st.session_state:
@@ -241,7 +250,7 @@ def main():
 
             
 
-    # Show selection
+    # Minibinders
     if st.session_state.protein_type == "Minibinder":
 
         col1, col2, col3 = st.columns(3, gap = "large")
